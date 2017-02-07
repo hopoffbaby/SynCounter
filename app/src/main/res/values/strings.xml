@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SynCounter</string>
+    <string name="button_send">Gobble!</string>
+</resources>

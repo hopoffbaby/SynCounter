@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:text="15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/synRemainingTB"
+        tools:textSize="36sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="false"
+        android:textSize="50sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_weight="0.01" />
+
+    <Button
+        android:text="reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetButton"
+        android:layout_weight="0.03"
+        android:onClick="resetCount" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="71dp">
+
+        <SeekBar
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="293dp"
+            android:layout_height="match_parent"
+            android:max="30"
+            android:progress="0"
+            android:id="@+id/Slider"
+            android:layout_weight="0.28" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/sliderValueText"
+            android:textAlignment="center"
+            android:textStyle="normal|bold|italic"
+            android:textSize="24sp"
+            android:layout_weight="0.91" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:text="@string/button_send"
+        android:onClick="sendMessage"
+        android:id="@+id/gobbleButton"
+        android:layout_weight="0.36" />
+
+</LinearLayout>
